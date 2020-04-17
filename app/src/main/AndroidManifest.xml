@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.mydiary">
+    <!-- camera, gallery -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".LoadingActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoTitleAppTheme">   <!-- 앱 시작 로딩화면 -->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ModifyDiaryActivity"
+            android:screenOrientation="portrait" />     <!-- 더보기 화면 -->
+        <activity
+            android:name=".BookmarkActivity"
+            android:screenOrientation="portrait" />     <!-- 북마크 화면 -->
+        <activity
+            android:name=".SearchDiaryActivity"
+            android:screenOrientation="portrait" />     <!-- 일기 검색화면 -->
+        <activity
+            android:name=".MoreActivity"
+            android:screenOrientation="portrait" />     <!-- 더보기 화면 -->
+        <activity
+            android:name=".PublicDiaryActivity"
+            android:screenOrientation="portrait" />     <!-- 일기 공유 화면 -->
+        <activity
+            android:name=".DiaryCollectionActivity"
+            android:screenOrientation="portrait" />     <!-- 일기 모아보기 화면 -->
+        <activity
+            android:name=".WriteActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoTitleAppTheme"
+            android:windowSoftInputMode="adjustResize" /> <!-- 키보드 레이아웃에 맞춰서 리사이징해준다. -->        <!-- 글쓰기 화면 -->
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait" />     <!-- 메인 홈화면 -->
+        <activity
+            android:name=".JoinActivity"
+            android:screenOrientation="portrait" />     <!-- 회원가입 화면 -->
+        <activity
+            android:name=".LoginActivity"
+            android:screenOrientation="portrait">     <!-- 로그인 화면 -->
+
+        </activity>
+    </application>
+
+</manifest>

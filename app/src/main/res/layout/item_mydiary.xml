@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/item_myDiary_linear"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="16dp"
+    android:background="@drawable/border_bottom"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_diaryDate"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_margin="8dp"
+        android:background="#D8E6E7"
+        android:paddingLeft="8dp"
+        android:text="날짜보일곳" />
+
+    <ImageView
+        android:id="@+id/iv_diaryPicture"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:scaleType="fitXY"
+        android:adjustViewBounds="true"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_diaryText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="작성한 글 보이는곳" />
+
+</LinearLayout>
